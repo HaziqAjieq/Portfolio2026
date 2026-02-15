@@ -1,4 +1,30 @@
-  @import "tailwindcsss";
-
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+  @import "tailwindcss";
   /* setup for main style here example root*/
 
+@theme {
+  --color-background : #F8FAFC;
+  --color-surface : #FFFFFF;
+  --color-primary-accent : #2563EB;
+  --color-secondary-accent: #6366F1;
+  --text-primary : #0F172A;
+  --text-secondary : #475569;
+  --color-boder : #E2E8F0;
+
+  /* gradient color */
+  --color-background-gradient-start: #ffffff;
+   --color-background-gradient-middle: #ced4da;
+   --color-background-gradient-end: #939ca3;
+
+  --font-title : "sora" , sans-serif;
+  --font-paragraph: "Inter" , sans-serif;
+};
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--color-background-gradient-start),
+    var(--color-background-gradient-middle),
+    var(--color-background-gradient-end)
+  );
+}
