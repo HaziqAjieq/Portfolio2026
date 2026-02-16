@@ -30,7 +30,7 @@ const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative items-center mt-2">
+    <nav className="relative items-center mt-2 z-100">
       {/* Hamburger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -82,7 +82,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.screenY > 50);
+      setScrolled(window.screenY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -94,7 +94,10 @@ export const Navbar = () => {
       className={`fixed top-0 w-full transition-colors duration-300 flex justify-between ${scrolled ? "bg-gray-600 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div>
-        <img src={Logo} className="w-30" />
+        <Link to={"/"}>
+        <img src={Logo} className="w-30 cursor-pointer" />
+        </Link>
+        
       </div>
       <div className=" flex items-center mr-5 md:hidden">
         <HamburgerMenu />
