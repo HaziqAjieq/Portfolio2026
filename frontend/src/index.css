@@ -4,11 +4,12 @@
 
 @theme {
   --color-background : #F8FAFC;
+  --color-gradient : #AD8787;
   --color-surface : #FFFFFF;
   --color-primary-accent : #2563EB;
   --color-secondary-accent: #6366F1;
-  --text-primary : #0F172A;
-  --text-secondary : #475569;
+  --color-text-primary : #0F172A;
+  --color-text-secondary : #475569;
   --color-boder : #E2E8F0;
 
   /* gradient color */
@@ -20,11 +21,6 @@
   --font-paragraph: "Inter" , sans-serif;
 };
 
-body {
-  background: linear-gradient(
-    to bottom,
-    var(--color-background-gradient-start),
-    var(--color-background-gradient-middle),
-    var(--color-background-gradient-end)
-  );
+:root {
+  background: radial-gradient(circle, var(--color-background) ,var(--color-gradient) );
 }
