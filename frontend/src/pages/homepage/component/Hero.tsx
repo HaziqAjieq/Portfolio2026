@@ -5,7 +5,7 @@ import { homepageContent } from "../../../content/homepage.type";
 const Hero = () => {
   const { hero } = homepageContent ;
   return (
-    <section className="flex  items-center justify-center pt-30 lg:pt-20 mb-10 md:pt-40  h-screen overflow-hidden">
+    <section className=" hero flex  items-center justify-center pt-30 lg:pt-20 mb-10 md:pt-40  h-screen overflow-hidden ">
      <div className="flex flex-col justify-evenly gap-5 lg:grid lg:grid-cols-3 h-full">
 
      
@@ -20,8 +20,8 @@ const Hero = () => {
         </div>
 
         {/* image on the first layer */}
-        <div className="h-full sm:col-span-2 lg:col-span-1 lg:order-2 flex  items-end  justify-center ">
-          <img src={heroImg} className="w-100 sm:w-120 md:w-160 lg:w-full  " />
+        <div className="h-full sm:col-span-2 lg:col-span-1 lg:order-2 flex  items-end  justify-center  ">
+          <img src={heroImg} className="w-100 sm:w-120  lg:w-full rounded-b-full  " />
         </div>
    </div>
     </section>

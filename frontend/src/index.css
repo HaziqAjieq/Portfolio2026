@@ -21,6 +21,7 @@
   --font-paragraph: "Inter" , sans-serif;
 };
 
+
 :root {
   background: radial-gradient(circle, var(--color-background) ,var(--color-gradient) );
 }
