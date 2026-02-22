@@ -26,11 +26,24 @@ const Navlist = ({ className, linkClassName }: NavlistProps) => {
 
 // hamburger menu
 
-const HamburgerMenu = () => {
+const HamburgerMenu = () => {     
   const [isOpen, setIsOpen] = useState(false);
 
+  //block scrolling when menu
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
-    <nav className="relative items-center mt-2 z-100">
+    <nav className="fixed items-center mt-2 z-40">
       {/* Hamburger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -44,7 +57,7 @@ const HamburgerMenu = () => {
 
       {/* Menu list */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white/40 backdrop-blur-md flex flex-col items-center justify-center z-40">
+        <div className="fixed inset-0 w-full h-screen bg-white/70 backdrop-blur-md  flex flex-col items-center justify-center z-50">
           {/* Close button */}
           <button
             onClick={() => setIsOpen(false)}
@@ -91,7 +104,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full transition-colors duration-300 flex justify-between ${scrolled ? "bg-gray-600 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+      className={`fixed top-0 w-full transition-colors duration-300 flex justify-between ${scrolled ? "bg-gray-600/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div>
         <Link to={"/"}>
