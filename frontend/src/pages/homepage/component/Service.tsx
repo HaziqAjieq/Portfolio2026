@@ -4,7 +4,7 @@ import type { ServiceList } from "../../../content/homepage.type";
  
 // the card component on the same file
 const ServiceCard:React.FC<{ service : ServiceList}> = ({service}) => (
-<div className="card flex flex-col  text-center w-3/4 gap-2 bg-background py-3 rounded-2xl h-30 md:h-60 justify-center border-2 border-boder ">
+<div className="card flex flex-col  text-center w-3/4 gap-2 bg-background py-3 rounded-2xl h-40 md:h-60 justify-center border-2 border-boder ">
    
     <h3 className="text-2xl md:text-3xl font-title font-semibold w-full">{service.title}</h3>
     <p className="text-sm md:text-md font-paragraph font-normal text-center justify-center mx-20">{service.description}</p>

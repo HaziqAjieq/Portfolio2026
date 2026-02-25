@@ -1,3 +1,4 @@
+import About from "./component/About"
 import Hero from "./component/Hero"
 import Service from "./component/Service"
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero/>
       <Service/>
+      <About/>
     </>
   )
 }
