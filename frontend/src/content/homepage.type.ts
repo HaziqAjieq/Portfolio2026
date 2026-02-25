@@ -1,3 +1,5 @@
+import  AboutImg  from "../assets/image/heroImage/test.png"
+
 export interface ServiceList {
   id: number;
   title: string;
@@ -40,6 +42,6 @@ export const homepageContent: HomepageContent = {
     description:
       "With over 5 years of experience in the food and beverage industry managing operations and leading teams, I developed strong communication, problem-solving, and time management skills that I now bring into my journey as a self-taught web developer. Driven by curiosity and passion for technology, I transitioned into tech and am currently building projects while learning HTML, CSS, JavaScript, React, Node.js, and MySQL, constantly pushing myself to grow and improve every day.",
     ctaButton: "Contact Me",
-    imageUrl: "https://placehold.co/300", // Placeholder image URL
+    imageUrl: AboutImg, // Placeholder image URL
   },
 };

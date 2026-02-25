@@ -13,7 +13,7 @@ const ServiceCard:React.FC<{ service : ServiceList}> = ({service}) => (
 
 const Service = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-4 w-full justify-evenly items-center">
+    <section className="flex flex-col lg:flex-row gap-4 w-full justify-evenly items-center">
         {homepageContent.services.map(service => (
           <ServiceCard key={service.id} service={service} />
         ))}

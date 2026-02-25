@@ -104,7 +104,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full transition-colors duration-300 flex justify-between ${scrolled ? "bg-gray-600/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+      className={`fixed top-0 w-full transition-colors duration-300 flex justify-between ${scrolled ? "bg-boder/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div>
         <Link to={"/"}>
@@ -112,7 +112,7 @@ export const Navbar = () => {
         </Link>
         
       </div>
-      <div className=" flex items-center mr-5 md:hidden">
+      <div className=" flex items-center justify-end mr-5 md:hidden">
         <HamburgerMenu />
       </div>
       <div className="hidden md:flex items-center mr-5">

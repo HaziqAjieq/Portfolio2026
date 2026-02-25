@@ -10,7 +10,7 @@
   --color-secondary-accent: #6366F1;
   --color-text-primary : #0F172A;
   --color-text-secondary : #475569;
-  --color-boder : #E2E8F0;
+  --color-boder : #C00000;
 
   /* gradient color */
   --color-background-gradient-start: #ffffff;
@@ -23,5 +23,5 @@
 
 
 :root {
-  background: radial-gradient(circle, var(--color-background) ,var(--color-gradient) );
+  background: var(--color-background);
 }
