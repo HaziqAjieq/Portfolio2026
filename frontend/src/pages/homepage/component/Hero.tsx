@@ -5,15 +5,15 @@ import { homepageContent } from "../../../content/homepage.type";
 const Hero = () => {
   const { hero } = homepageContent ;
   return (
-    <section className="hero flex flex-wrap  items-center justify-center pt-30  mb-10   h-screen overflow-hidden ">
+    <section className="hero flex   items-center justify-center pt-30  mb-10   h-screen overflow-hidden ">
      <div className="flex flex-col justify-evenly gap-5 lg:grid lg:grid-cols-[1fr_1.5fr_1fr] h-full">
 
      
         <div className=" flex items-center    ">
-          <h1 className="text-center  w-full font-bold font-title text-3xl md:text-6xl m-3 text-text-primary">{hero.title}</h1>
+          <h1 className="text-center  w-full font-bold font-title text-4xl md:text-6xl m-3 text-text-primary">{hero.title}</h1>
         </div>
-        <div className=" flex flex-col  justify-center lg:order-3 ">
-          <h2 className="text-center mx-5 lg:text-start font font-medium font-paragraph text-md md:text-xl text-text-secondary ">
+        <div className=" flex flex-col  justify-center items-center lg:order-3 w-full ">
+          <h2 className=" mx-2 text-center justify-center text-balance  lg:text-start font font-medium font-paragraph text-md md:text-xl text-text-secondary ">
          {hero.subtitle}
           </h2>
          
@@ -21,7 +21,7 @@ const Hero = () => {
 
         {/* image on the first layer */}
         <div className=" md:h-full  sm:col-span-2 lg:col-span-1 lg:order-2 flex  items-end  justify-center  ">
-          <img src={heroImg} className="  h-auto w-80 sm:w-90 md:w-160 lg:w-full rounded-b-full  " />
+          <img src={heroImg} className="  h-auto w-80 sm:w-90 md:w-120 lg:w-full rounded-b-full  " />
         </div>
    </div>
     </section>

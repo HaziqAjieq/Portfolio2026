@@ -5,8 +5,8 @@
 @theme {
   --color-background : #F8FAFC;
   --color-gradient : #AD8787;
-  --color-surface : #FFFFFF;
-  --color-primary-accent : #2563EB;
+  --color-surface : #DE3C3C;
+  --color-primary-accent : #F7B32D;
   --color-secondary-accent: #6366F1;
   --color-text-primary : #0F172A;
   --color-text-secondary : #475569;
@@ -19,6 +19,8 @@
 
   --font-title : "sora" , sans-serif;
   --font-paragraph: "Inter" , sans-serif;
+
+  --shadow-bottom:0 30px 40px -15px rgba(0, 0, 0, 0.5);;
 };
 
 
