@@ -9,7 +9,7 @@ const Hero = () => {
      <div className="flex flex-col justify-evenly gap-5 lg:grid lg:grid-cols-[1fr_1.5fr_1fr] h-full">
 
      
-        <div className=" flex items-center    ">
+        <div className=" flex items-center pt-10 md:mt-20 lg:mt-0   ">
           <h1 className="text-center  w-full font-bold font-title text-4xl md:text-6xl m-3 text-text-primary">{hero.title}</h1>
         </div>
         <div className=" flex flex-col  justify-center items-center lg:order-3 w-full ">
@@ -21,7 +21,7 @@ const Hero = () => {
 
         {/* image on the first layer */}
         <div className=" md:h-full  sm:col-span-2 lg:col-span-1 lg:order-2 flex  items-end  justify-center  ">
-          <img src={heroImg} className="  h-auto w-80 sm:w-90 md:w-120 lg:w-full rounded-b-full  " />
+          <img src={heroImg} className="  h-auto w-80 sm:w-90 md:w-160 lg:w-full rounded-b-full  " />
         </div>
    </div>
     </section>

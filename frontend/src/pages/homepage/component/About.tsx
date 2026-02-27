@@ -44,7 +44,7 @@ const About = () => {
               {about.description}
             </p>
 
-            <button className="self-center md:self-start bg-primary-accent text-white px-6 py-3 rounded-xl shadow-md hover:bg-secondary hover:-translate-y-1 transition-all duration-300">
+            <button className="self-center md:self-start bg-primary-accent text-white px-6 py-3 rounded-xl shadow-md hover:bg-secondary hover:-translate-y-1 transition-all duration-300 cursor-pointer">
               {about.ctaButton}
             </button>
           </div>
