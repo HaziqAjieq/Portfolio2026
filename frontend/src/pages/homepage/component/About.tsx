@@ -52,7 +52,7 @@ const About = () => {
         </div>
      
       </div>
-        <div className="relative bottom-0 left-20 md:left-40 transform -translate-x-1/2 w-3/5 h-1 bg-boder mt-10 md:mt-20"></div>
+        <div className="flex bottom-0 left-20 md:left-40 transform -translate-x-1/2 w-3/5 h-1 bg-boder mt-10 md:mt-20 z-0 "></div>
     </section>
   );
 };

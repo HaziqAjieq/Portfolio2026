@@ -46,5 +46,25 @@ export const projects: Project[] = [
     liveUrl: "https://tasks.demo.com",
     githubUrl: "https://github.com/username/project3",
     isFeature: true
-  }
+  },
+   {
+    id: 4,
+    title: "E-Commerce Platform",
+    description: "A full-stack e-commerce solution with cart functionality and Stripe integration.",
+    technologies: ["React", "TypeScript", "Node.js", "Stripe"],
+    imageUrl: project3,
+    liveUrl: "https://demo-shop.com",
+    githubUrl: "https://github.com/username/project1",
+    isFeature:false,
+  },
+  {
+    id: 5,
+    title: "AI Image Generator",
+    description: "An app that generates unique images based on text prompts using OpenAI API.",
+    technologies: ["Next.js", "TypeScript", "OpenAI", "TailwindCSS"],
+    imageUrl: project2,
+    githubUrl: "https://github.com/username/project2",
+    isFeature: true,
+  },
+
 ];
