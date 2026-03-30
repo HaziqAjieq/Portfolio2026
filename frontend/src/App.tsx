@@ -9,11 +9,11 @@ function App() {
       {/* navbar goes here */}
       <Navbar />
       <div className="flex justify-center z-0 ">
-        <div className="max-w-360 md:px-5  w-full flex flex-col">
+       
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-        </div>
+        
       </div>
       {/* footer goes here */}
     </Router>

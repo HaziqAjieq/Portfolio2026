@@ -10,7 +10,7 @@ const ProjectCard = ({ project } : ProjectCardProps) => {
       <img
         src={project.imageUrl}
         alt={project.title}
-        className="mt-5  rounded-2xl items-center w-full h-70 md:h-90 lg:h-100 overflow-hidden  "
+        className="mt-5  rounded-2xl items-center w-full h-80 md:h-90 lg:h-100 overflow-hidden  "
       />
 
       <div className="flex flex-col gap-5 mt-5 w-full">
@@ -22,7 +22,7 @@ const ProjectCard = ({ project } : ProjectCardProps) => {
             {project.technologies.map((tech,index) => (
               <span
                 key={index}
-                className="text-sm text-shadow-md bg-gray-200 px-2 py-1 mb-4 rounded-full shadow-lg border border-gray-500 font-paragraph font-light "
+                className="text-xs text-shadow-md bg-gray-200 px-2 py-1 mb-4 rounded-full shadow-lg border border-gray-500 font-paragraph font-light "
               >
                 {tech}
               </span>
