@@ -4,15 +4,17 @@ import test2 from '../../../assets/image/heroImage/contactImg.jpg';
 
 const Contact = () => {
   return (
-    <div className='w-screen bg-background-gradient-middle flex flex-col  md:flex-row h-auto'>
-      <div className='w-full h-full'>
+    <div className='relative w-screen flex items-center align-middle z-0 h-auto'>
+      <div className='absolute w-full h-full'>
         <img
       src={test2}
-      className=' h-full object-cover'
+      className='absolute inset-0 w-full h-full object-cover'
       />
       </div>
+      <div className='flex flex-1 w-full'>
+        <ContactForm/>
+      </div>
       
-      <ContactForm/>
     </div>
   )
 }

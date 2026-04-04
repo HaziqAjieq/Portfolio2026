@@ -104,7 +104,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full transition-colors duration-300 flex justify-between md:pr-6 ${scrolled ? "bg-boder/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+      className={`fixed z-50 top-0 w-full transition-colors duration-300 flex justify-between md:pr-6 ${scrolled ? "bg-boder/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div>
         <Link to={"/"}>

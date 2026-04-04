@@ -32,20 +32,65 @@ if (form.current) {
 
  }
   return (
-    <form 
-    ref={form} 
-    onSubmit={sendEmail}
-    className='flex flex-col w-full h-full  gap-4 my-10 mx-10'
-    >
-      <label className='text-md md:text-xl font-semibold'>Name</label>
-      <input type="text" name='user_name' className='bg-white rounded' />
-      <label className='text-md md:text-xl font-semibold'>Email</label>
-      <input type='email' name='user_email' className='bg-white rounded'/>
-      <label className='text-md md:text-xl font-semibold'>Message</label>
-      <textarea name='message' className='h-40 bg-white rounded'/>
-      <input type="submit" value="Send" className='text-md md:text-xl font-semibold self-center md:self-start bg-primary-accent text-white px-6 py-3 rounded-xl shadow-md hover:bg-secondary hover:-translate-y-1 transition-all duration-300 cursor-pointer'  />
-      
-    </form>
+    <form
+  ref={form}
+  onSubmit={sendEmail}
+  className="w-full max-w-2xl mx-auto my-16 px-6 py-8 bg-white/60 backdrop-blur-lg rounded-2xl shadow-lg flex flex-col gap-6"
+>
+  <h2 className="text-2xl md:text-3xl font-bold text-center">
+    Contact Me
+  </h2>
+
+  {/* Name */}
+  <div className="flex flex-col gap-2">
+    <label className="text-sm md:text-base font-medium text-gray-700">
+      Name
+    </label>
+    <input
+      type="text"
+      name="user_name"
+      placeholder="Your name"
+      className="px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      required
+    />
+  </div>
+
+  {/* Email */}
+  <div className="flex flex-col gap-2">
+    <label className="text-sm md:text-base font-medium text-gray-700">
+      Email
+    </label>
+    <input
+      type="email"
+      name="user_email"
+      placeholder="you@example.com"
+      className="px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      required
+    />
+  </div>
+
+  {/* Message */}
+  <div className="flex flex-col gap-2">
+    <label className="text-sm md:text-base font-medium text-gray-700">
+      Message
+    </label>
+    <textarea
+      name="message"
+      rows={5}
+      placeholder="Write your message..."
+      className="px-4 py-3 rounded-lg border border-gray-300 bg-white resize-none focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      required
+    />
+  </div>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="mt-4 self-center md:self-start bg-primary-accent text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-secondary hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+  >
+    Send Message
+  </button>
+</form>
   )
 }
 
