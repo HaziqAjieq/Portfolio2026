@@ -4,7 +4,7 @@ const About = () => {
   const { about } = homepageContent;
 
   return (
-    <section className="about flex flex-col items-center bg-gray-50 py-24    ">
+    <section className="about flex flex-col items-center bg-gray-50 mt-20    ">
       <div className="max-w-6xl mx-full px-8  ">
         
         {/* Title */}
@@ -35,7 +35,7 @@ const About = () => {
           </div>
 
           {/* Text */}
-          <div className="md:w-1/2 flex flex-col gap-2 text-center md:text-left">
+          <div className="md:w-1/2 flex flex-col gap-2 text-start  md:text-left">
             <h2 className="hidden md:flex items-center justify-center font-title font-bold text-3xl md:text-4xl text-text-primary text-center mb-10">
           {about.title}
         </h2>
@@ -52,7 +52,7 @@ const About = () => {
         </div>
      
       </div>
-        <div className="flex bottom-0 left-20 md:left-40 transform -translate-x-1/2 w-3/5 h-1 bg-boder mt-10 md:mt-20 z-0 "></div>
+        
     </section>
   );
 };

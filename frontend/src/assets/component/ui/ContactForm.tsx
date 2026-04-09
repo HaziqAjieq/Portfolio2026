@@ -35,15 +35,15 @@ if (form.current) {
     <form
   ref={form}
   onSubmit={sendEmail}
-  className="w-full max-w-2xl mx-auto my-16 px-6 py-8 bg-white/60 backdrop-blur-lg rounded-2xl shadow-lg flex flex-col gap-6"
+  className="w-full flex flex-col gap-4 max-w-2xl mx-auto my-16 px-6 py-8  bg-white/20 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-lg"
 >
-  <h2 className="text-2xl md:text-3xl font-bold text-center">
+  <h2 className="text-2xl md:text-3xl font-bold text-center text-shadow-indigo-100 text-white">
     Contact Me
   </h2>
 
   {/* Name */}
-  <div className="flex flex-col gap-2">
-    <label className="text-sm md:text-base font-medium text-gray-700">
+  <div className="flex flex-col gap-4">
+    <label className="text-sm md:text-base font-medium text-shadow-indigo-100 text-white">
       Name
     </label>
     <input
@@ -57,7 +57,7 @@ if (form.current) {
 
   {/* Email */}
   <div className="flex flex-col gap-2">
-    <label className="text-sm md:text-base font-medium text-gray-700">
+    <label className="text-sm md:text-base font-medium text-shadow-indigo-100 text-white">
       Email
     </label>
     <input
@@ -71,7 +71,7 @@ if (form.current) {
 
   {/* Message */}
   <div className="flex flex-col gap-2">
-    <label className="text-sm md:text-base font-medium text-gray-700">
+    <label className="text-sm md:text-base font-medium text-shadow-indigo-100 text-white">
       Message
     </label>
     <textarea

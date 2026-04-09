@@ -1,8 +1,8 @@
 import { workexperience } from "../../../data/workexp/workexp";
 const Work = () => {
   return (
-    <section className="w-full max-w-4xl mx-auto py-16 px-6">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+    <section className="w-full max-w-4xl mx-auto  px-6 md:px-0  ">
+      <h2 className="text-4xl md:text-5xl font-bold mb-10 text-center">
         Work Experience
       </h2>
 
@@ -11,7 +11,7 @@ const Work = () => {
           <div key={exp.id} className="relative">
 
             {/* Dot */}
-            <div className="absolute -left-[10px] top-2 w-4 h-4 bg-primary-accent rounded-full"></div>
+            <div className="absolute -left-2.5 top-2 w-4 h-4 bg-primary-accent rounded-full"></div>
 
             {/* Card */}
             <div className="bg-white shadow-md rounded-xl p-5 hover:shadow-lg transition">
