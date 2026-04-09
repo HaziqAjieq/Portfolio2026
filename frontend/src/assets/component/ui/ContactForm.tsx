@@ -14,10 +14,10 @@ const ContactForm: React.FC = () => {
 //ensure the form reference if not null / taking the serviceid from the env
 if (form.current) { 
   emailjs.sendForm(
-    import.meta.env.SERVICE_ID,
-    import.meta.env.TEMPLATE_ID,
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
     form.current,
-    import.meta.env.PUBLIC_KEY,
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
   )
   .then((result) => {
     alert('Message Sent');
