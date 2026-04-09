@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Logo from "../../image/logo/mhk.png";
 import { navLinks } from "../../../data/navLinks";
-import { Link } from "react-router-dom";
+
 
 type NavlistProps = {
   className?: string; // allow custom styling
@@ -13,10 +13,10 @@ const Navlist = ({ className, linkClassName }: NavlistProps) => {
     <nav>
       <ul className={className}>
         {navLinks.map((link) => (
-          <li key={link.key} >
-            <Link to={link.path} className={linkClassName}>
+          <li key={link.key}>
+            <a href={link.path} className={linkClassName}>
               {link.key.toUpperCase()}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
@@ -74,13 +74,13 @@ const HamburgerMenu = () => {
           <ul className="flex flex-col gap-6 text-xl font-semibold">
             {navLinks.map((link) => (
               <li key={link.key}>
-                <Link
-                  to={link.path}
+                <a
+                  href={link.path}
                   onClick={() => setIsOpen(false)}
                   className="hover:text-primary transition-colors"
                 >
                   {link.key.toUpperCase()}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -107,9 +107,9 @@ export const Navbar = () => {
       className={`fixed z-50 top-0 w-full transition-colors duration-300 flex justify-between md:pr-6 ${scrolled ? "bg-boder/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
       <div>
-        <Link to={"/"}>
+        <a href="/">
         <img src={Logo} className="w-30 cursor-pointer" />
-        </Link>
+        </a>
         
       </div>
       <div className=" flex items-center justify-end mr-5 md:hidden">

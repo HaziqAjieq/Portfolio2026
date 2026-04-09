@@ -23,6 +23,9 @@
   --shadow-bottom:0 30px 40px -15px rgba(0, 0, 0, 0.5);;
 };
 
+html{
+scroll-behavior: smooth;
+}
 
 :root {
   background: var(--color-background);

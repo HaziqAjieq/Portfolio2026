@@ -1,4 +1,6 @@
 import { workexperience } from "../../../data/workexp/workexp";
+import cv  from "../../../data/workexp/MUHAMMAD_HAZIQ_CV.pdf";
+
 const Work = () => {
   return (
     <section className="w-full max-w-4xl mx-auto  px-6 md:px-0  ">
@@ -26,7 +28,18 @@ const Work = () => {
 
           </div>
         ))}
+
+
+      <a
+              href={cv}
+              download="MUHAMMAD_HAZIQ_CV.pdf"
+              className="cv-btn  self-center md:self-start bg-primary-accent text-white px-6 py-3 rounded-xl shadow-md hover:bg-secondary hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+            >
+              Download CV
+              
+            </a>
       </div>
+
     </section>  
       
   

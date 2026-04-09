@@ -4,7 +4,7 @@ import SocialMediaContact from "../../../assets/component/ui/SocialMediaContact"
 
 const Contact = () => {
   return (
-    <div className="relative w-screen flex items-center align-middle z-0 h-auto">
+    <section id="contact" className="relative w-screen flex items-center align-middle z-0 h-auto">
       <div className="absolute inset-0">
         <img
           src={test2}
@@ -18,7 +18,7 @@ const Contact = () => {
         <SocialMediaContact/>
      
       </div>
-    </div>
+    </section>
   );
 };
 

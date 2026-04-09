@@ -5,7 +5,7 @@ import { homepageContent } from "../../../content/homepage.type";
 const Hero = () => {
   const { hero } = homepageContent ;
   return (
-    <section className="hero flex   items-center justify-center pt-30  mb-10   h-screen overflow-hidden ">
+    <section id="/" className="hero flex   items-center justify-center pt-30  mb-10   h-screen overflow-hidden ">
      <div className="flex flex-col justify-evenly gap-5 lg:grid lg:grid-cols-[1fr_1.5fr_1fr] h-full">
 
      

@@ -1,8 +1,8 @@
  export const navLinks =[
-   {key: "home" , path: "/"},
-   {key: "project" , path: "/project"},
+   {key: "home" , path: "#/"},
+   {key: "project" , path: "#project"},
    
-   {key: "contact" , path: "/contact"},
+   {key: "contact" , path: "#contact"},
 ]
 
 
