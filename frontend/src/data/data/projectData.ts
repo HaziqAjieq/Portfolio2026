@@ -20,8 +20,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     title: "HC-CHURROS",
-    description:
-      "A full-stack website built for a small churros business, focusing on managing multiple store locations with ease. The platform includes simple user authentication for stall owners to create new outlets and add promotional content through a customizable slideshow. It’s designed to help the business grow while staying user-friendly.",
+    description:"A responsive multi-page website built for a small churros business, designed to showcase multiple store locations and business offerings in a clean and user-friendly interface. The site includes structured pages for business information, franchise opportunities, and promotional content through a customizable slideshow. Focused on delivering a smooth user experience, it highlights clear navigation, modern UI design, and accessibility across devices.",
     tags: ["JavaScript", "Tailwind", "React",],
     imageUrl: hcchurros,
     liveUrl: "https://hcchurros.com", // add if deployed
