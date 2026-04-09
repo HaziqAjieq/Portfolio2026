@@ -3,7 +3,7 @@ import Hero from "./component/Hero"
 import Project from "./component/Project"
 import Service from "./component/Service"
 import Contact from "./component/Contact"
-
+import Work from './component/Work'
 const Home = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const Home = () => {
       <Service/>
       <About/>
       <Project/>
+      <Work/>
       </div>
       <Contact/>
       </div>

@@ -16,6 +16,14 @@ export const workexperience : WorkExperience[] = [
     startDate:"2016",
     endDate:"2021",
     },
+    {
+    id:2,
+    company:"Zuspresso (Zus Coffee)",
+    role:"Barista",
+    description:"Full time barista",
+    startDate:"2025",
+    endDate:"present"
+    }
 
 ]
 
