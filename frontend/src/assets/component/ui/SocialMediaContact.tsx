@@ -1,7 +1,6 @@
 import React from "react";
 import { SocialMedia } from "@nightmaregaurav/react-social-media-links";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import ContactForm from "./ContactForm";
 
 interface SocialLink {
