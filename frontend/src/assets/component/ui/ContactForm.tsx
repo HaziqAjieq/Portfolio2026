@@ -50,7 +50,7 @@ if (form.current) {
       type="text"
       name="user_name"
       placeholder="Your name"
-      className="px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      className="px-4 py-3 rounded-lg border text-black border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
       required
     />
   </div>
@@ -64,7 +64,7 @@ if (form.current) {
       type="email"
       name="user_email"
       placeholder="you@example.com"
-      className="px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      className="px-4 py-3 text-black rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
       required
     />
   </div>
@@ -78,7 +78,7 @@ if (form.current) {
       name="message"
       rows={5}
       placeholder="Write your message..."
-      className="px-4 py-3 rounded-lg border border-gray-300 bg-white resize-none focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
+      className="px-4 py-3 rounded-lg border text-black border-gray-300 bg-white resize-none focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent transition"
       required
     />
   </div>
